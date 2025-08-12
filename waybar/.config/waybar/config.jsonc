@@ -183,7 +183,7 @@
       }
     },
     "network": {
-        "interface": "eth0", // (Optional) To force the use of this interface
+        "interface": "ens33", // (Optional) To force the use of this interface
         //"format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} 󰈀",
         "tooltip-format": "{ifname} via {gwaddr} 󰈀",
@@ -216,7 +216,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "LIBGL_ALWAYS_SOFTWARE=1 pavucontrol"
     },
     "custom/media": {
         "format": "{icon} {text}",
